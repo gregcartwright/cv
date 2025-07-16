@@ -1,0 +1,218 @@
+% cv.tex
+% vim:set ft=tex spell:
+
+%\documentclass[10pt,a4paper]{article}
+\documentclass{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+%use headers and footers package
+\usepackage{fancyhdr}
+%show headers and footers
+\pagestyle{fancy}
+%change the starting offset for the page numbers
+\setcounter{page}{1}
+%define a centred header
+%\chead{Gregory Cartwright -- \emph{Curriculum Vitae}}
+%define a centred footer
+\cfoot{Gregory Cartwright}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+%\newcommand{\CPP}
+%{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Gregory Cartwright}}
+
+14 Baker Grove\ \ \textbullet
+\ \ Ibstock\ \ \textbullet
+\ \ Leicestershire\ \ \textbullet
+\ \ LE67 6DB
+\\
+07977 22 88 38\ \ \textbullet
+\ \ GregCartwright@yahoo.co.uk
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Employment Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Leicestershire Partnership NHS Trust}}
+		{\textbf{Leicestershire}}
+	\\
+	\headerrow
+		{\emph{Advanced Nurse Practitioner}}
+		{\emph{January 2015 -- present}}
+	\begin{itemize*}
+		\item Working autonomously in a community hospital ward to provide the 
+			clinical management of the inpatients.
+		This is done under the supervision of the acute consultant who visits 
+			the ward twice a week.
+
+		\item Providing leadership within the MDT to maximise patient outcomes 
+			and minimise delays to their pathways, 
+			with the aim of achieving optimal patient experience. 
+		
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{University Hospitals of Leicester NHS Trust}}
+		{\textbf{Leicester}}
+	\\
+	\headerrow
+		{\emph{Critical Care Outreach Nurse}}
+		{\emph{April 2009 -- December 2014}}
+	\begin{itemize*}
+
+	\item Providing support for critically ill patients in ward environments.
+	\item Working with ward-based medical and nursing staff to optimise 
+	outcomes for these patients.
+	\item Assessing patients using an ABCDE structure to identify the 
+	current issues affecting their current health.
+	\item Liaising with the patients and the teams on the wards to fomulate
+	plans to address these issues.
+	\item When necessary, working closely with the team on the Critical
+	Care Unit to arrange patient review or admission to the unit.
+	\item Providing education for clinical staff including nurses, 
+	junior doctors, and students.
+	\end{itemize*}
+
+%	\item
+	\headerrow
+		{\emph{Staff Nurse, Respiratory Medicine}}
+		{\emph{September 2008 -- April 2004}}
+	\begin{itemize*}
+		\item Providing evidence based care for in-patients on an acute 
+		respiratory ward.
+		\item Working as part of a multidisciplinary team.
+		\item Leading the ward on a daily basis.
+	\end{itemize*}
+%	\item
+	\headerrow
+		{\emph{Staff Nurse, Intensive Care Unit}}
+		{\emph{September 2005 -- September 2008}}
+	\begin{itemize*}
+		\item Providing all care for critically ill patients in a busy 
+		intensive care unit.
+		\item Working as part of a multidisciplinary team.
+		\item Contributing to education programmes for junior staff.
+	\end{itemize*}
+		
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{London South Bank University}}
+		{\textbf{London}}
+	\\
+	\headerrow
+		{\emph{MSc Advanced Nurse Practitioner [RCN Accredited]}}
+		{\emph{September 2015 -- July 2018}}
+	This included clinical modules, plus:
+	\begin{itemize*}
+		\item RCN-7-013 "Leadership and Service Development for ANPs"
+		\item Dissertation "Does level of frailty influence advance care planning
+			for community hospital inpatients?"
+	\end{itemize*}
+%	\item
+	\headerrow
+		{\emph{PgCert Non-Medical Prescribing}}
+		{\emph{January 2015 -- August 2015}}
+	\item 
+	\headerrow
+		{\textbf{De Montfort University}}
+		{\textbf{Leicester}}
+	\\
+	\headerrow
+		{\emph{PgCert Accountability and Consultation Skills with Merit}}
+		{\emph{September 2013 -- November 2014}}
+%	\item
+	\\
+	\headerrow
+		{\emph{Mentorship in Clinical Healthcare 15 credit degree level module}}
+		{\emph{January 2008 -- July 2008}}
+	\\
+	\headerrow
+		{\emph{BSc (Hons) Second Class (Upper Division) Nursing (Adult Branch)}}
+		{\emph{September 2002 -- October 2005}}
+	\item 
+	\headerrow
+		{\textbf{University Of Warwick}}
+		{\textbf{Coventry}}
+	\\
+	\headerrow
+		{\emph{BSc (Hons) in Mathematics Class Two: Division Two}}
+		{\emph{September 1993 -- July 1996}}
+	
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Short Vocational Courses}
+
+\begin{itemize}
+	\item
+	\headerrow
+		{\textbf{Two Day Interactive Communication Skills Course}}
+		{\textbf{3\textsuperscript{rd} and 4\textsuperscript{th} August 2015}}
+	\\
+	\headerrow
+		{\emph{LOROS Hospice}}
+		{\emph{Leicester}}
+	\item
+	\headerrow
+		{\textbf{Advanced Life Support Course}}
+		{\textbf{14\textsuperscript{th} and 15\textsuperscript{th} May 2015}}
+	\\
+	\headerrow
+		{\emph{University Hospitals of Leicester}}
+		{\emph{Leicester}}
+\end{itemize}
+\end{document}
